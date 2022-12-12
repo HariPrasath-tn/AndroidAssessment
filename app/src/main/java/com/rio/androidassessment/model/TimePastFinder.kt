@@ -12,6 +12,11 @@ class TimePastFinder {
         if(months > 0) {
             return "$months months ago"
         }
+
+        var weeks = days/7
+        if(weeks > 0){
+            return "$weeks weeks ago"
+        }
         if(days > 0) {
             return "$days days ago"
         }
