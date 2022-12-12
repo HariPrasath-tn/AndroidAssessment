@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator"
+    app:startDestination="@id/timePastFinderFragment">
+
+    <fragment
+        android:id="@+id/timePastFinderFragment"
+        android:name="com.rio.androidassessment.view.TimeStampActivityFraagments.TimePastFinderFragment"
+        android:label="fragment_time_past_finder"
+        tools:layout="@layout/fragment_time_past_finder" >
+        <action
+            android:id="@+id/action_timePastFinderFragment_to_timeFormatingFragment"
+            app:destination="@id/timeFormatingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeFormatingFragment"
+        android:name="com.rio.androidassessment.view.TimeStampActivityFraagments.TimeFormatingFragment"
+        android:label="fragment_time_formating"
+        tools:layout="@layout/fragment_time_formating" />
+</navigation>
